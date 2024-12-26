@@ -1,4 +1,4 @@
 # myPorjectChatapp
-ChatApp is a real-time messaging platform built with [list your technologies: e.g., Node.js, React, Express,tailwindCSS, etc.]. It offers seamless and responsive communication features with a focus on user-friendly design and secure messaging.
+<p><strong>ChatApp</strong> is a real-time messaging platform built with <b>[list your technologies: e.g., Node.js, React, Express,tailwindCSS, etc.]</b>. It offers seamless and responsive communication features with a focus on user-friendly design and secure messaging.</p>
 <br>
-Auther - Puraniya Hardik
+<h1>Auther - Puraniya Hardik</h1>
