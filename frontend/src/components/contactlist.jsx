@@ -39,7 +39,7 @@ const ContactList = ({ Contacts = [], isChannel = false }) => {
               !isChannel && <Avatar className="h-10 w-10  rounded-full overflow-hidden">
                 {contact.image ? (
                   <AvatarImage
-                    src={`http://localhost:8787/${contact.image}`}
+                    src={`http://localhost:3000/${contact.image}`}
                     alt="Profile"
                     className="object-cover w-full h-full bg-black"
                   />

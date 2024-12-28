@@ -1,7 +1,8 @@
-import { compare } from "bcryptjs";
+import pkg from "bcryptjs";
 import USER from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 import {renameSync,unlinkSync} from "fs"
+const { compare } = pkg;
 // verification for JWT Token Exprice Date 
 const MaxDate=3 * 24 * 60 * 60 * 1000; // validate for 3 days;
 

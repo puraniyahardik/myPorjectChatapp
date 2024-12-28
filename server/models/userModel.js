@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-import {genSalt, hash} from "bcryptjs";
+import pkg from "bcryptjs";
+const {genSalt,hash} = pkg;
 // const bcrypt = require('bcryptjs');
 const UserModel=mongoose.Schema({
     Email:{
@@ -34,11 +35,11 @@ const UserModel=mongoose.Schema({
     },
 });
 
-UserModel.pre("save",async function save(next){
-    const salt=await genSalt();
+UserModel.pre("save", async function save(next) {
+    const salt = await genSalt(); // Generate the salt
     console.log(salt);
     console.log(this.Password);
-    this.Password = await hash(this.Password,salt);
+    this.Password = await hash(this.Password, salt); // Hash the password
     next();
 });
 

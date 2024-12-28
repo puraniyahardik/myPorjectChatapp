@@ -7,7 +7,7 @@ import {HOST} from "@/utiles/constants.js";
 
 
  export const apiClient=axios.create({
-    baseURL:"http://localhost:8787",
+    baseURL:"http://localhost:3000",
 })
 
 // export const apiClient=axios.create({
