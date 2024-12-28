@@ -7,7 +7,8 @@ import {HOST} from "@/utiles/constants.js";
 
 
  export const apiClient=axios.create({
-    baseURL:"https://myporjectchatapp.onrender.com",
+    baseURL: "https://myporjectchatapp.onrender.com", // Backend URL
+    withCredentials: true,
 })
 
 // export const apiClient=axios.create({
