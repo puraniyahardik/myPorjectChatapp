@@ -75,7 +75,7 @@ const Auth = () => {
       try {
         // Perform the API call
         const response = await apiClient.post(
-          "https://myporjectchatapp.onrender.com/api/auth/login",
+          "/api/auth/login",
           { Email, Password },
           { withCredentials: true }
         );
@@ -110,7 +110,7 @@ const Auth = () => {
       try {
         // Perform the API call
         const response = await apiClient.post(
-        "https://myporjectchatapp.onrender.com/api/auth/signup",
+          "/api/auth/signup",
           { Email, Password },
           { withCredentials: true }
         );
