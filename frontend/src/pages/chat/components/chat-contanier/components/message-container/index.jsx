@@ -31,7 +31,7 @@ const MessageContainer = () => {
       setisDownloading(true);
       setfileDownLoadProgress(0);
       // Fetch the file using your API client
-      const res = await apiClient.get(`http://localhost:3000/${url}`, {
+      const res = await apiClient.get(`https://myporjectchatapp.onrender.com${url}`, {
         responseType: "blob",
         onDownloadProgress:(progressEvent)=>{
           const {loaded,total} = progressEvent;
@@ -130,7 +130,7 @@ const MessageContainer = () => {
           }}
           >
             {/* `http://localhost:3000/${userInfo.image}` */}
-            <img src={`http://localhost:3000/${message.fileUrl}`} height={300} alt="sorry" />
+            <img src={`https://myporjectchatapp.onrender.com/${message.fileUrl}`} height={300} alt="sorry" />
 
           </div> : <div className='flex justify-center items-center gap-4'><span className='text-white/80 text-3xl bg-black/20 rounded-full p-3'>
           <MdFolderZip />
@@ -163,7 +163,7 @@ const MessageContainer = () => {
       {
         showImage && <div className='fixed z-[1000] top-0 left-0 w-[100vw] h-[100vh] flex justify-center items-center backdrop-blur-lg flex-col'>
           <div>
-          <img src={`http://localhost:3000/${imageURL}`} className='h-[80vh] w-full bg-cover' alt="sorry" />
+          <img src={`https://myporjectchatapp.onrender.com/${imageURL}`} className='h-[80vh] w-full bg-cover' alt="sorry" />
           </div>
           <div className="flex gap-5 fixed top-0 mt-5">
             <button className='bg-black/20 p-3 text-2xl hover:bg-black/50 cursor-pointer transition-all duration-300' onClick={()=> handledownLoadFile(imageURL)}>

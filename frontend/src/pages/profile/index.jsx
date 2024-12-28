@@ -34,7 +34,7 @@ function Profile() {
 
     if(userInfo.image)
     {
-      setImage(`http://localhost:3000/${userInfo.image}`);
+      setImage(`https://myporjectchatapp.onrender.com/${userInfo.image}`);
     }
   },[])
 
