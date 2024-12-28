@@ -27,23 +27,6 @@ const ContactsContainer = () => {
     }
 
 
-    // const getChannels=async()=>{
-    //   const respones=await apiClient.get(
-    //     // GET_USER_CHANNEL_ROUTES
-    //     '/api/channel/getuserchannels'
-    //     ,
-    //     {
-    //     withCredentials:true,
-    //     });
-
-    //   console.log(respones)
-    //   if(respones.data.channels)
-    //   {
-    //     // console.log(respones.data.Contacts);
-    //     setChannels(respones.data.channels)
-
-    //   }
-    // }
 
     const getChannels = async () => {
       try {
@@ -80,15 +63,7 @@ const ContactsContainer = () => {
         </div>
         
       </div>
-      {/* <div className="my-5">
-        <div className="flex items-center justify-between pr-10">
-            <Title text="Channels"/>
-            <CreateChannel />
-        </div>
-        <div className='max-h-[38vh] overflow-y-auto scrollbar-hidden'>
-          <ContactList Contacts={channels} isChannel={true}/>
-        </div>
-      </div>  */}
+   
       <ProfileInfo/>
     </div>
   )

@@ -38,26 +38,6 @@ const NewDm = () => {
       closeChat
     } = useAppStore()
 
-    // const SearchContacts=async(Search)=>{
-    //     try{
-    //         if(Search.length>0)
-    //         {
-    //             const respone=await apiClient.post("/api/contacts/search",{Search},{withCredentials:true});
-    //             console.log({respone});
-    //             if(respone.status==200 && respone.data.Contacts)
-    //             {
-    //                 setSearchedContacts(respone.data.Contacts)
-    //             }
-
-    //         }else{
-    //             setSearchedContacts([]);
-    //         }
-    //     }
-    //     catch(error)
-    //     {
-    //         console.log(error)
-    //     }
-    // }
     const SearchContacts = async (Search) => {
         try {
           if (Search.length > 0) {
@@ -166,43 +146,6 @@ const NewDm = () => {
         )
       )}
 
-                    {/* {
-                    Array.isArray(SearchContacts) && SearchContacts.length > 0 ? (
-                        SearchContacts.map((contact) => (
-                        <div key={contact._id} className='flex gap-3 items-center cursor-pointer'>
-                            <div className="w-12 h-12 relative">
-                            <Avatar className="h-12 w-12  rounded-full overflow-hidden">
-                                {contact.image ? (
-                                <AvatarImage 
-                                    src={`http://localhost:8787/${contact.image}`} 
-                                    alt="Profile" 
-                                    className="object-cover w-full h-full bg-black" 
-                                />
-                                ) : (
-                                <div className={`uppercase h-12 w-12  text-lg flex items-center justify-center ${getColor(contact.color)}`}>
-                                    {contact.firstName 
-                                    ? contact.firstName.charAt(0) 
-                                    : contact.Email.charAt(0)
-                                    }
-                                </div>
-                                )}
-                            </Avatar>
-                            </div>
-                            <div className="flex flex-col">
-                            <span>
-                                {contact.firstName && contact.lastName 
-                                ? `${contact.firstName} ${contact.lastName}` 
-                                : " "
-                                }
-                            </span>
-                            <span className='text-xs'>{contact.Email}</span>
-                            </div>
-                        </div>
-                        ))
-                    ) : (
-                        <p>Loading or no contacts available...</p>
-                    )
-                    } */}
 
                 </div>
             </ScrollArea>

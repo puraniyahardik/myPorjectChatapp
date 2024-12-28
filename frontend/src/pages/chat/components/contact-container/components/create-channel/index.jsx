@@ -48,36 +48,7 @@ const CreateChannel = () => {
       },[]);
 
 
-      // const createChannel = async () =>{
-
-      //   try {
-      //     if (channelName.length >0 && selectedContact.length >0) {
-            
-      //       const res = await apiClient.post(
-      //         // CREATE_CHANNEL_ROUTES
-      //         '/api/channel/create-channel'
-      //         ,{
-      //         name:channelName,
-      //         members:selectedContact.map((contact)=> contact.value)
-      //       },
-      //       {
-      //         withCredentials:true
-      //       }
-      //       );
-      //       if (res === 200) {
-      //         setChannelName("");
-      //         setSelectedContact([]);
-      //         setNewChannelModel(false);
-      //         addChannel(res.data.channel);
-      //       }
-      //     }}
-      //      catch (error) {
-      //     console.log({error});
-          
-          
-      //   }
-
-      // }
+      
 
       const createChannel = async () => {
         try {

@@ -26,21 +26,6 @@ const MessageContainer = () => {
 
 
 
-
-  // const handledownLoadFile   = async  (url) => {
-  //       const res = await apiClient.get(`http://localhost:8787/${url}`,{
-  //         responseType:"blob",
-  //       });
-  //       const urlBlob = window.URL.createObjectURL(new Blob([res.data]));
-  //       const link = document.createElement('a');
-  //       link.setAttribute("download",url.split("/").pop());
-  //       document.body.appendChild(link);
-  //       link.click();
-  //       link.remove();
-  //       window.URL.revokeObjectURL(urlBlob);
-  // };
-
-
   const handledownLoadFile = async (url) => {
     try {
       setisDownloading(true);

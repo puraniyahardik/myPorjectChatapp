@@ -133,24 +133,6 @@ const Auth = () => {
   };
   
 
-  // const handleRegistor=async()=>{
-  //   if(validate()){
-  //     await apiClient.post(SIGNUP_ROUTES,{Email,Password}).then(data=>console.log(data));
-  //     alert("DATA INSERTED!");
-  //   }
-  // }
-
-  // const handleRegistor = async () => {
-  //   if(validate()){
-  //   const response = await fetch("http://localhost:8787/api/auth/signup", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ Email, Password }),
-  //   });
-  //   const data = await response.json();
-  //   console.log(data);
-  // }
-  // };
   
   return (
     <div className="w-[100vw] h-[100vh] flex items-center justify-center">
