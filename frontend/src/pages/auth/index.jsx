@@ -135,6 +135,7 @@ const Auth = () => {
 
   
   return (
+      <form action="">
     <div className="w-[100vw] h-[100vh] flex items-center justify-center">
       <div className='h-[80vh] bg-white border-2 border-white text-orange-90 shadow-2xl w-[80vw] md:w-[90vw] lg:w-[70vw] xl:w-[60vw] rounded-3xl grid xl:grid-cols-2'>
         <div className="flex flex-col gap-10 items-center">
@@ -152,6 +153,7 @@ const Auth = () => {
                 <TabsTrigger value="Registor" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Registor</TabsTrigger>
               </TabsList>
               <TabsContent value="Login" className="flex flex-col gap-5 mt-5 ">
+
                 <Input
                 placeholder="Enter Your Email"
                 type="email"
@@ -203,6 +205,7 @@ const Auth = () => {
         </div>
       </div>
     </div>
+                </form>
   )
 }
 

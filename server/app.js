@@ -26,15 +26,25 @@ mongoose.connect(MongoDB).then(()=>console.log("DataBase Conneted Succesfully"))
 
 app.options("*", cors()); // Preflight requests handling
 
+// app.use(
+//     cors({
+//         // origin:[process.env.ORIGIN],
+//         origin: "https://frontend-9lb2.onrender.com", // Frontend URL
+//         methods:["GET","POST","PUT","PATCH","DELETE"],
+//         allowedHeaders: ['Content-Type'],
+//         credentials:true,
+//     })
+// );
+
 app.use(
     cors({
-        // origin:[process.env.ORIGIN],
-        origin: "https://frontend-9lb2.onrender.com", // Frontend URL
-        methods:["GET","POST","PUT","PATCH","DELETE"],
-        allowedHeaders: ['Content-Type'],
-        credentials:true,
+      origin: "https://frontend-9lb2.onrender.com",  // Allow only your frontend URL
+      credentials: true,  // Allow cookies and authorization headers
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
+      allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
     })
-);
+  );
+
 
 //static routes for stroing image
 app.use('/uploads/profiles',express.static('uploads/profiles'));
