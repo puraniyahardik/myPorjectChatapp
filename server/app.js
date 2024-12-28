@@ -23,9 +23,13 @@ const MongoDB=process.env.MONGODB_URL;
 mongoose.connect(MongoDB).then(()=>console.log("DataBase Conneted Succesfully")).catch((err)=>console.log(err.message));
 
 //Use Cors
+
+app.options("*", cors()); // Preflight requests handling
+
 app.use(
     cors({
-        origin:[process.env.ORIGIN],
+        // origin:[process.env.ORIGIN],
+        origin: "https://frontend-9lb2.onrender.com", // Frontend URL
         methods:["GET","POST","PUT","PATCH","DELETE"],
         allowedHeaders: ['Content-Type'],
         credentials:true,
